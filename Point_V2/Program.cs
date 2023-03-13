@@ -5,10 +5,10 @@ using System.Text.RegularExpressions;
 class Point:IComparable
 {
     //Поля
-    protected int x, y;
+    protected double x, y;
     
-    public int X { get { return x; } set { x = value; } }
-    public int Y { get { return y; } set { y = value; } }
+    public double X { get { return x; } set { x = value; } }
+    public double Y { get { return y; } set { y = value; } }
     //Конструкторы
     public Point()
     {
@@ -16,13 +16,13 @@ class Point:IComparable
         Y = 0;
     }
 
-    public Point(int x)
+    public Point(double x)
     {
         X = x;
         Y = 0;
     }
 
-    public Point (int x, int y)
+    public Point (double x, double y)
     {
         X = x;
         Y = y;
@@ -77,12 +77,12 @@ class ColorPoint:Point
         color = "White";
     }
 
-    public ColorPoint(int x, string color):base(x)
+    public ColorPoint(double x, string color):base(x)
     {
         this.color = color;
     }
 
-    public ColorPoint (int x, int y, string color):base(x,y)
+    public ColorPoint (double x, double y, string color):base(x,y)
     {
         this.color = color;
     }
